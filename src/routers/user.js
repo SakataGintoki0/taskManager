@@ -18,9 +18,9 @@ const upload = multer({
   },
 });
 
-router.get("/test", (req, res) => {
-  res.send("lol");
-});
+// router.get("/test", (req, res) => {
+//   res.send("lol");
+// });
 
 router.post("/users", async (req, res) => {
   const user = new User(req.body);
